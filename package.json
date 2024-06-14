@@ -1,0 +1,28 @@
+{
+  "name": "veavon-hap",
+  "license": "MIT",
+  "author": "Dmitry Nourell <hi@imcatwhocode.dev>",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "lint": "eslint . && prettier --check ."
+  },
+  "prettier": "@vercel/style-guide/prettier",
+  "dependencies": {
+    "@abandonware/noble": "^1.9.2-24",
+    "debug": "^4.3.4",
+    "hap-nodejs": "^0.12.0"
+  },
+  "devDependencies": {
+    "@types/debug": "^4",
+    "@types/node": "^20.12.8",
+    "@typescript-eslint/eslint-plugin": "^6.17.0",
+    "@typescript-eslint/parser": "^6.17.0",
+    "@vercel/style-guide": "^5.1.0",
+    "eslint": "^8.56.0",
+    "prettier": "^3.1.1",
+    "typescript": "^5.3.3"
+  },
+  "packageManager": "yarn@4.0.2"
+}
